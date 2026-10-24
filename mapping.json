@@ -1,0 +1,28 @@
+{
+  "entity_type": { "source": "typ", "map": { "POI": "poi" } },
+  "id": "id",
+  "fields": [
+    { "target": "designation", "source": "name", "transform": ["trim"], "required": true },
+    { "target": "name", "i18n": { "de-DE": "name", "en-GB": "name_en" }, "transform": ["trim"] },
+    { "target": "texts.teaserSummer", "i18n": { "de-DE": "kurztext" } },
+    { "target": "address.street", "source": "strasse", "transform": ["trim"] },
+    { "target": "address.postalCode", "source": "plz", "transform": ["trim"] },
+    { "target": "address.city", "source": "ort", "transform": ["trim"] },
+    { "target": "address.countryCode", "const": "DE" },
+    { "target": "geo.latitude", "source": "lat", "transform": ["float"], "required": true },
+    { "target": "geo.longitude", "source": "lng", "transform": ["float"], "required": true },
+    { "target": "contact.phone", "source": "telefon" },
+    { "target": "contact.email", "source": "email", "transform": ["trim", "lower"] },
+    { "target": "contact.website", "i18n": { "de-DE": "website" } },
+    {
+      "target": "categories", "source": "kategorie", "transform": ["lower", "split:,"],
+      "map": {
+        "freizeit": "a1000000-0000-0000-0000-000000000001",
+        "natur": "a1000000-0000-0000-0000-000000000002",
+        "kultur": "a1000000-0000-0000-0000-000000000003",
+        "sport": "a1000000-0000-0000-0000-000000000004"
+      },
+      "unmapped": "drop", "required": true
+    }
+  ]
+}

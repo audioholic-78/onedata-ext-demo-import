@@ -1,0 +1,6 @@
+id;typ;name;name_en;kurztext;strasse;plz;ort;lat;lng;telefon;email;website;kategorie
+DEMO-1;POI;Schloss Sanssouci;Sanssouci Palace;Sommerschloss Friedrichs des Großen mit Weinbergterrassen.;Maulbeerallee;14469;Potsdam;52.4045;13.0386;+49 331 9694200;info@example.org;https://www.example.org/sanssouci;kultur
+DEMO-2;POI;Biosphäre Potsdam;Biosphere Potsdam;Tropenhalle mit Schmetterlingshaus im Volkspark.;Georg-Hermann-Allee 99;14469;Potsdam;52.4199;13.0503;+49 331 550740;;https://www.example.org/biosphaere;freizeit,natur
+DEMO-3;POI;Kanu-Station Werder;Canoe Station Werder;"Kanuverleih am Havelufer; Touren nach Absprache.";Uferpromenade 4;14542;Werder (Havel);52.3779;12.9348;+49 3327 12345;kanu@example.org;;sport
+DEMO-4;POI;Café am Markt;Market Café;Hausgebackener Kuchen und regionale Küche.;Markt 1;14542;Werder (Havel);52.3800;12.9300;+49 3327 99999;;;freizeit
+DEMO-5;POI;Ohne Koordinaten;;Dieser Datensatz zeigt die Fehlerliste der Migration.;;;;;;;;;kultur

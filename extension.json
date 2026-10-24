@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/audioholic-78/one-data-extensions/main/schema/extension.schema.json",
+  "manifest_version": 1,
+  "id": "de.destination-one.demo-csv-import",
+  "name": "Demo: CSV-Datenmigration",
+  "version": "1.0.0",
+  "kind": "import_format",
+  "runtime": "declarative",
+  "summary": "Beispiel-Extension für Partner: importiert Points of Interest aus einer Semikolon-CSV in one.data.",
+  "publisher": {
+    "name": "destination.one GmbH",
+    "url": "https://www.destination.one",
+    "email": "info@destination.one"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/audioholic-78/onedata-ext-demo-import",
+  "requires": { "onedata": ">=1.35" },
+  "categories": ["csv", "poi", "demo"],
+  "data_egress": false,
+  "import": {
+    "parser": "csv",
+    "source_system": "demo-csv",
+    "options": { "delimiter": ";", "id_path": "id", "type_path": "typ" },
+    "mapping": "mapping.json",
+    "sample": "samples/pois.csv",
+    "accept": ".csv,text/csv",
+    "hint": "UTF-8-CSV mit Semikolon, Kopfzeile laut samples/pois.csv"
+  }
+}
