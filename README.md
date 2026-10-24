@@ -1,6 +1,6 @@
 # Demo: CSV-Datenmigration
 
-Vorlage für Partner, die ihr eigenes Dateiformat als **Datenmigration** in den od marketplace bringen möchten.
+Vorlage für Partner, die ihr eigenes Dateiformat als **Datenmigration** in den one.data marketplace bringen möchten.
 
 ## Anbieter
 
@@ -25,13 +25,13 @@ Programmcode. Sie besteht nur aus Konfiguration:
 | `extension.json` | Manifest: Art `import_format`, Parser `csv`, Optionen, Version |
 | `mapping.json` | Zuordnung der CSV-Spalten zu den Feldern des one.data-Datenstandards |
 | `samples/pois.csv` | Beispieldatei (in one.data unter *Datenmigration → Beispiel* herunterladbar) |
-| `logo.png`, `screenshots/` | Darstellung im od marketplace |
+| `logo.png`, `screenshots/` | Darstellung im one.data marketplace |
 
 ![Datenmigration mit dem CSV-Format](screenshots/01-migration.png)
 
 ### So funktioniert es
 
-1. **Aktivieren:** Im od marketplace die Extension für die eigene Instanz aktivieren.
+1. **Aktivieren:** Im one.data marketplace die Extension für die eigene Instanz aktivieren.
 2. **Hochladen:** Unter *Administration → Datenmigration* das Format „Demo: CSV-Datenmigration“ wählen und die CSV hochladen.
    Die Datensätze landen quellgetreu im Staging (Quellsystem `demo-csv`).
 3. **Mappen & importieren:** Die mitgelieferte Mapping-Version `ext-1.0.0` ist bereits ausgewählt. Ungültige Zeilen
